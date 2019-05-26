@@ -8,3 +8,11 @@
   display: inline-block;
   margin: 0 10px;
 }
+
+.App a {
+  text-decoration: none;
+}
+
+.App a.active {
+  text-decoration: underline;
+}
