@@ -7,14 +7,13 @@ class Course extends Component {
   };
 
   componentDidMount() {
-    const query = new URLSearchParams(this.props.location.search);
-    for (let param of query.entries()) {
-      this.setState({
-        title: param[1]
-      });
-    }
+    this.parseQueryParams();
   }
   componentDidUpdate() {
+    this.parseQueryParams();
+  }
+
+  parseQueryParams() {
     const query = new URLSearchParams(this.props.location.search);
     for (let param of query.entries()) {
       if (param[1] !== this.state.title) {
