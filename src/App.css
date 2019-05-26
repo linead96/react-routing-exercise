@@ -1,0 +1,10 @@
+.App ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.App li {
+  display: inline-block;
+  margin: 0 10px;
+}
